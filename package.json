@@ -18,7 +18,6 @@
     "./dist/style.css": "./dist/style.css"
   },
   "types": "dist/index.d.ts",
-  "private": true,
   "scripts": {
     "dev:sample": "vite",
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly",
