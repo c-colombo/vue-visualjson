@@ -11,7 +11,7 @@ _Note: This is the first public release of the component and I've tried to pull 
 Easily navigate the viewport by panning and zooming. Press the home button at any time to reset the viewport.
 
 
-https://github.com/c-colombo/vue-visualjson/assets/129905607/9f08fe29-c6e1-4326-b127-f103969c4484
+https://github.com/c-colombo/vue-visualjson/assets/129905607/8071e133-2f8e-4b5e-af7d-71aa84e4f3fc
 
 
 ### Precision edges provide a clear view of JSON data structure.
@@ -19,7 +19,7 @@ https://github.com/c-colombo/vue-visualjson/assets/129905607/9f08fe29-c6e1-4326-
 Edges line up precisely with their parent key-value pair, providing an unambiguous representation of the JSON data hierarchy.
 
 
-https://github.com/c-colombo/vue-visualjson/assets/129905607/6307e37a-7961-49d3-a9ee-9c419820bcf9
+https://github.com/c-colombo/vue-visualjson/assets/129905607/14bfe315-adb8-451e-a758-84e61b2388c2
 
 
 ### View arrays in collapsed or expanded mode.
@@ -27,7 +27,7 @@ https://github.com/c-colombo/vue-visualjson/assets/129905607/6307e37a-7961-49d3-
 Collapse arrays for a compact view that allows you to cycle through them entry-by-entry, or de-select to see all entries in a full expanded view.
 
 
-https://github.com/c-colombo/vue-visualjson/assets/129905607/ac45d21b-d876-46ef-91b3-44a3fc038d86
+https://github.com/c-colombo/vue-visualjson/assets/129905607/b350bf3a-56cc-4a39-af54-9f1419f573ba
 
 
 ### Color-coding for nodes and edges.
@@ -38,7 +38,7 @@ Optionally enable color-coding to gain insight into the structure of JSON data:
 - **Edges:** Blue edges indicate the child node is the exclusive value in the parent key-value pair, while yellow edges indicate it is an array-entry.
 
 
-https://github.com/c-colombo/vue-visualjson/assets/129905607/fdeece50-1be9-4a22-9d70-1ec05bf81406
+https://github.com/c-colombo/vue-visualjson/assets/129905607/2a368dbc-bb20-4de9-a12a-8448528d0de9
 
 
 ### Value color-coding and labels.
@@ -46,7 +46,7 @@ https://github.com/c-colombo/vue-visualjson/assets/129905607/fdeece50-1be9-4a22-
 Values are color-coded by type, aligning with commonly-used colors for literals in code-editor themes. Optionally enable type-labels for an even clearer view.
 
 
-https://github.com/c-colombo/vue-visualjson/assets/129905607/e239fcf0-1d16-4b47-9438-d3a9e8814348
+https://github.com/c-colombo/vue-visualjson/assets/129905607/7463612a-ddc5-4128-a3f2-00fbf61dedeb
 
 
 ### Customizable rendering options.
@@ -54,7 +54,7 @@ https://github.com/c-colombo/vue-visualjson/assets/129905607/e239fcf0-1d16-4b47-
 Easily change rendering parameters in the included control panel. Override default parameters by passing a prop to VisualJSON in your code.
 
 
-https://github.com/c-colombo/vue-visualjson/assets/129905607/92d3c5c9-0408-4938-95c0-79b6bb83e63b
+https://github.com/c-colombo/vue-visualjson/assets/129905607/29cc6b51-5b55-401b-bf75-4603937572b7
 
 
 ## Dependencies
