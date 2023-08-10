@@ -10,13 +10,25 @@ _Note: This is the first public release of the component and I've tried to pull 
 
 Easily navigate the viewport by panning and zooming. Press the home button at any time to reset the viewport.
 
+
+https://github.com/c-colombo/vue-visualjson/assets/129905607/9f08fe29-c6e1-4326-b127-f103969c4484
+
+
 ### Precision edges provide a clear view of JSON data structure.
 
 Edges line up precisely with their parent key-value pair, providing an unambiguous representation of the JSON data hierarchy.
 
+
+https://github.com/c-colombo/vue-visualjson/assets/129905607/6307e37a-7961-49d3-a9ee-9c419820bcf9
+
+
 ### View arrays in collapsed or expanded mode.
 
 Collapse arrays for a compact view that allows you to cycle through them entry-by-entry, or de-select to see all entries in a full expanded view.
+
+
+https://github.com/c-colombo/vue-visualjson/assets/129905607/ac45d21b-d876-46ef-91b3-44a3fc038d86
+
 
 ### Color-coding for nodes and edges.
 
@@ -25,13 +37,25 @@ Optionally enable color-coding to gain insight into the structure of JSON data:
 - **Nodes:** Object nodes are blue, and array nodes are yellow (array nodes appear for JSON data with multi-dimensional arrays).
 - **Edges:** Blue edges indicate the child node is the exclusive value in the parent key-value pair, while yellow edges indicate it is an array-entry.
 
+
+https://github.com/c-colombo/vue-visualjson/assets/129905607/fdeece50-1be9-4a22-9d70-1ec05bf81406
+
+
 ### Value color-coding and labels.
 
 Values are color-coded by type, aligning with commonly-used colors for literals in code-editor themes. Optionally enable type-labels for an even clearer view.
 
+
+https://github.com/c-colombo/vue-visualjson/assets/129905607/e239fcf0-1d16-4b47-9438-d3a9e8814348
+
+
 ### Customizable rendering options.
 
 Easily change rendering parameters in the included control panel. Override default parameters by passing a prop to VisualJSON in your code.
+
+
+https://github.com/c-colombo/vue-visualjson/assets/129905607/92d3c5c9-0408-4938-95c0-79b6bb83e63b
+
 
 ## Dependencies
 
