@@ -1,0 +1,11 @@
+{
+  "name": "John Doe",
+  "age": 30,
+  "isEmployed": true,
+  "childrenNames": ["James", "Jill"],
+  "address": null,
+  "workExperience": [
+    ["Google", "2015-2020"],
+    ["Microsoft", "2020-present"]
+  ]
+}

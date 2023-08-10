@@ -1,0 +1,113 @@
+{
+  "level1": {
+    "node1": {
+      "property1": "value1",
+      "property2": "value2",
+      "property3": "value3",
+      "property4": "value4",
+      "level2": {
+        "node1": {
+          "property1": "value1",
+          "property2": "value2",
+          "property3": "value3",
+          "property4": "value4",
+          "property5": "value5",
+          "property6": "value6",
+          "property7": "value7"
+        },
+        "node2": {
+          "property1": "value1",
+          "property2": "value2",
+          "property3": "value3",
+          "property4": "value4",
+          "property5": "value5",
+          "property6": "value6",
+          "property7": "value7"
+        },
+        "node3": {
+          "property1": "value1",
+          "property2": "value2",
+          "property3": "value3",
+          "property4": "value4",
+          "property5": "value5",
+          "property6": "value6",
+          "property7": "value7"
+        }
+      }
+    },
+    "node2": {
+      "node1": {
+        "property1": "value1",
+        "property2": "value2",
+        "property3": "value3",
+        "property4": "value4",
+        "level2": {
+          "node1": {
+            "property1": "value1",
+            "property2": "value2",
+            "property3": "value3",
+            "property4": "value4",
+            "property5": "value5",
+            "property6": "value6",
+            "property7": "value7"
+          },
+          "node2": {
+            "property1": "value1",
+            "property2": "value2",
+            "property3": "value3",
+            "property4": "value4",
+            "property5": "value5",
+            "property6": "value6",
+            "property7": "value7"
+          },
+          "node3": {
+            "property1": "value1",
+            "property2": "value2",
+            "property3": "value3",
+            "property4": "value4",
+            "property5": "value5",
+            "property6": "value6",
+            "property7": "value7"
+          }
+        }
+      }
+    },
+    "node3": {
+      "node1": {
+        "property1": "value1",
+        "property2": "value2",
+        "property3": "value3",
+        "property4": "value4",
+        "level2": {
+          "node1": {
+            "property1": "value1",
+            "property2": "value2",
+            "property3": "value3",
+            "property4": "value4",
+            "property5": "value5",
+            "property6": "value6",
+            "property7": "value7"
+          },
+          "node2": {
+            "property1": "value1",
+            "property2": "value2",
+            "property3": "value3",
+            "property4": "value4",
+            "property5": "value5",
+            "property6": "value6",
+            "property7": "value7"
+          },
+          "node3": {
+            "property1": "value1",
+            "property2": "value2",
+            "property3": "value3",
+            "property4": "value4",
+            "property5": "value5",
+            "property6": "value6",
+            "property7": "value7"
+          }
+        }
+      }
+    }
+  }
+}

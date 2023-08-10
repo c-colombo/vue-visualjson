@@ -1,0 +1,13 @@
+{
+  "name": "Michael Johnson",
+  "age": 35,
+  "isEmployed": true,
+  "mixedArray": [
+    30,
+    "Hello World",
+    true,
+    null,
+    ["apple", "banana"],
+    { "country": "USA" }
+  ]
+}

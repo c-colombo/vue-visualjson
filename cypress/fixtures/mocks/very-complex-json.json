@@ -1,0 +1,75 @@
+{
+  "bookstore": {
+    "name": "The Grand Library",
+    "branches": [
+      {
+        "location": "New York",
+        "branchManager": {
+          "name": "John Doe",
+          "age": 45
+        },
+        "books": [
+          {
+            "title": "Moby Dick",
+            "author": "Herman Melville",
+            "details": {
+              "publisher": "Harper & Brothers",
+              "yearPublished": 1851,
+              "genre": "Adventure",
+              "ratings": [3.5, 4, 5, 4.5, 3],
+              "isAvailable": true
+            }
+          },
+          {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "details": {
+              "publisher": "J. B. Lippincott & Co.",
+              "yearPublished": 1960,
+              "genre": "Southern Gothic, Bildungsroman",
+              "ratings": [5, 5, 4, 4.5, 5],
+              "isAvailable": false
+            }
+          }
+        ]
+      },
+      {
+        "location": "San Francisco",
+        "branchManager": {
+          "name": "Jane Doe",
+          "age": 38
+        },
+        "books": [
+          {
+            "title": "1984",
+            "author": "George Orwell",
+            "details": {
+              "publisher": "Secker & Warburg",
+              "yearPublished": 1949,
+              "genre": "Dystopian, political fiction, social science fiction",
+              "ratings": [4.5, 4, 4.5, 4, 5],
+              "isAvailable": true
+            }
+          },
+          {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "details": {
+              "publisher": "Charles Scribner's Sons",
+              "yearPublished": 1925,
+              "genre": "Tragedy",
+              "ratings": [4, 4.5, 5, 3.5, 4],
+              "isAvailable": true
+            }
+          }
+        ]
+      }
+    ],
+    "owner": {
+      "name": "Bob Smith",
+      "age": 50,
+      "location": "Los Angeles"
+    },
+    "isOpen": true
+  }
+}

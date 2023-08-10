@@ -1,0 +1,11 @@
+{
+  "name": "Emily Stone",
+  "age": 40,
+  "isEmployed": false,
+  "childrenNames": ["Alice", "Bob"],
+  "pastAddresses": ["123 Apple St", "456 Orange Ave"],
+  "jobApplications": [
+    ["Amazon", "2022-01-01", ["Software Engineer", "Data Scientist"]],
+    ["Facebook", "2022-02-01", ["Product Manager"]]
+  ]
+}
