@@ -85,7 +85,7 @@ Vue-visualjson is fairly lightweight and implements most of its functionality di
    import { createApp } from 'vue'
    import App from './App.vue'
    import VisualJSON from 'vue-visualjson'
-   import 'vue-visualjson/style.css'
+   import 'vue-visualjson/dist/style.css'
 
    const app = createApp(App)
    app.use(VisualJSON)
