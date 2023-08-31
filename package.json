@@ -1,7 +1,11 @@
 {
   "name": "vue-visualjson",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A graphical JSON visualizer for Vue.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c-colombo/vue-visualjson"
+  },
   "files": [
     "dist/vue-visualjson.es.js",
     "dist/vue-visualjson.umd.js",
@@ -31,8 +35,7 @@
   },
   "dependencies": {
     "@phosphor-icons/vue": "^2.1.6",
-    "denque": "^2.1.0",
-    "vue": "^3.3.4"
+    "denque": "^2.1.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.3.2",
@@ -55,6 +58,7 @@
     "typescript": "~5.1.6",
     "vite": "^4.4.6",
     "vitest": "^0.33.0",
+    "vue": "^3.3.4",
     "vue-tsc": "^1.8.6"
   }
 }

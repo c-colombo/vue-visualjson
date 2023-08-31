@@ -121,6 +121,7 @@ function handleTreeBuild(height: number, width: number) {
 
 // Scaling content correct and in accordance with the mouse position in the viewport when scroll wheel is used.
 function scaleContent(event: WheelEvent) {
+  event.preventDefault();
   const oldScale = contentScale.value.scale;
   if (event.deltaY && viewport.value && content.value) {
     const direction = -1 * Math.sign(event.deltaY);
@@ -289,12 +290,8 @@ onMounted(() => {
         @catch-error="configOpen = true"
       ></Tree>
     </div>
-    <div
-      v-else
-      class="error"
-      :style="{ marginTop: viewport ? `${viewport.clientHeight / 4}px` : 0 }"
-    >
-      <PhWarning :size="viewport ? `${viewport.clientHeight / 4}` : 0" />
+    <div v-else class="error">
+      <PhWarning :size="'8rem'" />
       <h1>Invalid JSON</h1>
     </div>
   </div>

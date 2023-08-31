@@ -90,6 +90,28 @@ const arrayPropertyWithArrays: NodeProperty = {
   },
 };
 
+const arrayPropertyWithEmptyArray: NodeProperty = {
+  key: "arrayPropertyKey",
+  value: "empty array",
+  type: "emptyArray",
+  array: {
+    data: [],
+    index: 0,
+    length: 0,
+  },
+};
+
+const arrayPropertyWithMixedTypes: NodeProperty = {
+  key: "arrayPropertyKey",
+  value: "array",
+  type: "array",
+  array: {
+    data: ["array", 42, true, "null", "object", "array"],
+    index: 0,
+    length: 6,
+  },
+};
+
 const objectProperty: NodeProperty = {
   key: "objectPropertyKey",
   value: "object",
@@ -107,5 +129,7 @@ export {
   arrayPropertyWithNulls,
   arrayPropertyWithObjects,
   arrayPropertyWithArrays,
+  arrayPropertyWithEmptyArray,
+  arrayPropertyWithMixedTypes,
   objectProperty,
 };

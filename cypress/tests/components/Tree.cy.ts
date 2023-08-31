@@ -5,6 +5,7 @@ import broadJson from "../../fixtures/mocks/broad-json.json";
 import twoDimensionalArrayJson from "../../fixtures/mocks/two-dimensional-array-json.json";
 import multiDimensionalArrayJson from "../../fixtures/mocks/multi-dimensional-array-json.json";
 import mixedArrayJson from "../../fixtures/mocks/mixed-array-json.json";
+import emptyArrayJson from "../../fixtures/mocks/empty-array-json.json";
 import defaultFormatting from "../../fixtures/defaultFormatting";
 
 describe("<Tree />", () => {
@@ -128,6 +129,26 @@ describe("<Tree />", () => {
     cy.get("[class=node]").should("have.length", 3);
     cy.get("[class=edge]").should("have.length", 2);
   });
+  it("renders emptyArrayJson with collapsed arrays", () => {
+    cy.mount(Tree, {
+      propsData: {
+        data: JSON.stringify(emptyArrayJson),
+        formatting: defaultFormatting,
+      },
+    });
+    cy.get("[class=node]").should("have.length", 4);
+    cy.get("[class=edge]").should("have.length", 3);
+  });
+  it("renders emptyArrayJson with expanded arrays", () => {
+    cy.mount(Tree, {
+      propsData: {
+        data: JSON.stringify(emptyArrayJson),
+        formatting: { ...defaultFormatting, collapseArrays: false },
+      },
+    });
+    cy.get("[class=node]").should("have.length", 8);
+    cy.get("[class=edge]").should("have.length", 7);
+  });
   it("renders blank tree with passed invalid JSON", () => {
     cy.mount(Tree, {
       propsData: {
@@ -157,10 +178,10 @@ describe("<Tree />", () => {
       },
     });
     cy.get("[class=node]").should("have.length", 1);
-    cy.get("[class=arrayButton]").eq(1).click();
-    cy.get("[class=arrayButton]").eq(1).click();
-    cy.get("[class=arrayButton]").eq(1).click();
-    cy.get("[class=arrayButton]").eq(1).click();
+    cy.get("[class=arrayButton]").eq(0).click();
+    cy.get("[class=arrayButton]").eq(0).click();
+    cy.get("[class=arrayButton]").eq(0).click();
+    cy.get("[class=arrayButton]").eq(0).click();
     cy.get("[class=node]").should("have.length", 2);
     cy.get("[class=edge]").should("have.length", 1);
   });
@@ -172,7 +193,7 @@ describe("<Tree />", () => {
       },
     });
     cy.get("[class=node]").should("have.length", 1);
-    cy.get("[class=arrayButton]").eq(0).click();
+    cy.get("[class=arrayButton]").eq(1).click();
     cy.get("[class=node]").should("have.length", 2);
     cy.get("[class=edge]").should("have.length", 1);
   });
