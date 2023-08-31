@@ -5,6 +5,7 @@ import broadJson from "../cypress/fixtures/mocks/broad-json.json";
 import twoDimensionalArrayJson from "../cypress/fixtures/mocks/two-dimensional-array-json.json";
 import multiDimensionalArrayJson from "../cypress/fixtures/mocks/multi-dimensional-array-json.json";
 import mixedArrayJson from "../cypress/fixtures/mocks/mixed-array-json.json";
+import emptyArrayJson from "../cypress/fixtures/mocks/empty-array-json.json";
 import VisualJSON from "../src/components/VisualJSON.vue";
 import "./assets/main.css";
 import "../src/assets/style.css";
@@ -18,6 +19,7 @@ const testData = [
   twoDimensionalArrayJson,
   multiDimensionalArrayJson,
   mixedArrayJson,
+  emptyArrayJson,
   undefined,
 ];
 const index = ref(0);

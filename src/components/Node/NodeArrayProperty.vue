@@ -44,6 +44,8 @@ function getEntryValue(entry: any, type?: string) {
       return `(${type})`;
     case "array":
       return `(${type})`;
+    case "emptyArray":
+      return `(${entry})`;
     case "null":
       return type;
     case "string":
@@ -61,21 +63,13 @@ function getEntryValue(entry: any, type?: string) {
     </h3>
     <h3
       v-if="props.formatting.typeLabels"
-      :class="{ type: true, [property.type]: true }"
+      :class="{ type: true, array: true }"
     >
-      {{ "<" + property.type + ">" }}
+      {{ "<array>" }}
     </h3>
-    <button
-      class="arrayButton"
-      @click="$emit('decrementIndex', toRaw(property.array.data))"
-    >
-      <PhMinus
-        class="icons"
-        :size="props.formatting.textSize + 'rem'"
-        color="#d0d0d0"
-        weight="bold"
-      />
-    </button>
+    <h3 class="arrayCount">
+      {{ `(${property.array.length})` }}
+    </h3>
     <button
       class="arrayButton"
       @click="$emit('incrementIndex', toRaw(property.array.data))"
@@ -87,10 +81,18 @@ function getEntryValue(entry: any, type?: string) {
         weight="bold"
       />
     </button>
-    <h3 class="arrayCount">
-      {{ property.array.index + 1 + "/" + property.array.length }}
-    </h3>
-    <h3 class="key">{{ ":" }}</h3>
+    <button
+      class="arrayButton"
+      @click="$emit('decrementIndex', toRaw(property.array.data))"
+    >
+      <PhMinus
+        class="icons"
+        :size="props.formatting.textSize + 'rem'"
+        color="#d0d0d0"
+        weight="bold"
+      />
+    </button>
+    <h3 class="key">{{ `${property.array.index}:` }}</h3>
     <h3 :class="{ value: true, [property.type]: true }">
       {{ getEntryValue(property.value, property.type) }}
     </h3>
@@ -103,7 +105,7 @@ function getEntryValue(entry: any, type?: string) {
       v-if="props.formatting.typeLabels"
       :class="{ type: true, [property.type]: true }"
     >
-      {{ "<" + property.type + ">" }}
+      {{ "<array>" }}
     </h3>
     <h3 class="key">{{ ":" }}</h3>
     <h3 class="value arraySyntax">

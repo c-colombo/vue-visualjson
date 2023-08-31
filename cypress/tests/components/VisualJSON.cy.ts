@@ -13,6 +13,8 @@ describe("<VisualJSON />", () => {
     cy.get("[class=control-panel]").should("have.length", 0);
     cy.get("[class=content]").should("have.length", 1);
     cy.get("[class=error]").should("have.length", 0);
+    cy.get("[class=node]").should("have.length", 4);
+    cy.get("[class=edge]").should("have.length", 3);
   });
   it("renders with invalid json", () => {
     cy.mount(VisualJSON, {
@@ -25,6 +27,50 @@ describe("<VisualJSON />", () => {
     cy.get("[class=control-panel]").should("have.length", 0);
     cy.get("[class=content]").should("have.length", 0);
     cy.get("[class=error]").should("have.length", 1);
+  });
+  it("renders with custom formatting", () => {
+    cy.mount(VisualJSON, {
+      props: {
+        json: JSON.stringify(complexJson),
+        defaultFormatting: {
+          collapseArrays: false,
+          colorcodeEdges: false,
+          colorcodeNodes: false,
+          typeLabels: false,
+          textSize: 0.75,
+          lineSpacing: 0.25,
+          nodePaddingVertical: 0.5,
+          nodePaddingHorizontal: 0.5,
+          nodeWidth: 24,
+          nodeSpacingVertical: 4,
+          tierSpacingHorizontal: 6,
+        },
+      },
+    });
+    cy.get("[class=button-row]").should("have.length", 1);
+    cy.get("[class=button]").should("have.length", 2);
+    cy.get("[class=control-panel]").should("have.length", 0);
+    cy.get("[class=content]").should("have.length", 1);
+    cy.get("[class=error]").should("have.length", 0);
+    cy.get("[class=node]").should("have.length", 6);
+    cy.get("[class=edge]").should("have.length", 5);
+  });
+  it("renders with partially custom formatting", () => {
+    cy.mount(VisualJSON, {
+      props: {
+        json: JSON.stringify(complexJson),
+        defaultFormatting: {
+          collapseArrays: false,
+        },
+      },
+    });
+    cy.get("[class=button-row]").should("have.length", 1);
+    cy.get("[class=button]").should("have.length", 2);
+    cy.get("[class=control-panel]").should("have.length", 0);
+    cy.get("[class=content]").should("have.length", 1);
+    cy.get("[class=error]").should("have.length", 0);
+    cy.get("[class=node]").should("have.length", 6);
+    cy.get("[class=edge]").should("have.length", 5);
   });
   it("opens control panel when button is clicked", () => {
     cy.mount(VisualJSON, {

@@ -185,7 +185,7 @@ describe("<Node />", () => {
       .get("[class='property']")
       .eq(5)
       .find("button")
-      .eq(0)
+      .eq(1)
       .click()
       .then(() => {
         expect(onDecrementIndexSpy).to.be.calledOnce;
@@ -203,7 +203,7 @@ describe("<Node />", () => {
       .get("[class='property']")
       .eq(5)
       .find("button")
-      .eq(1)
+      .eq(0)
       .click()
       .then(() => {
         expect(onIncrementIndexSpy).to.be.calledOnce;

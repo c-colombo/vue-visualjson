@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Smith",
+      "roles": ["admin", "editor"]
+    },
+    {
+      "id": 2,
+      "name": "Bob Jones",
+      "roles": []
+    },
+    {
+      "id": 3,
+      "name": "Charlie Brown",
+      "roles": ["viewer"]
+    }
+  ],
+  "products": [
+    {
+      "productId": 1001,
+      "productName": "Laptop",
+      "tags": ["electronics", "computers"]
+    },
+    {
+      "productId": 1002,
+      "productName": "Table",
+      "tags": []
+    },
+    {
+      "productId": 1003,
+      "productName": "Pen",
+      "tags": ["stationery"]
+    }
+  ],
+  "emptyArray": [],
+  "settings": {
+    "theme": "dark",
+    "notifications": [],
+    "preferences": ["email", "sms"]
+  }
+}

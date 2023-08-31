@@ -100,7 +100,18 @@ export default class Tree {
             } else if (typeof value === "object") {
               // Special handling for arrays
               if (Array.isArray(value)) {
-                if (formatting.collapseArrays) {
+                if (value.length === 0) {
+                  properties.push({
+                    key: key,
+                    value: "empty array",
+                    type: "emptyArray",
+                    array: {
+                      data: value,
+                      index: 0,
+                      length: 0,
+                    },
+                  });
+                } else if (formatting.collapseArrays) {
                   // If collapseArrays is true, we only want to show the currently selected array entry
                   let entry = value[this.getArrayIndex(value)];
                   properties.push(
