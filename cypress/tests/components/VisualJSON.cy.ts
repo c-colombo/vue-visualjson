@@ -109,7 +109,7 @@ describe("<VisualJSON />", () => {
       cy.get("[class=content]").should(
         "have.css",
         "transform",
-        "matrix(1.1, 0, 0, 1.1, 8.6, -24)"
+        "matrix(1.1, 0, 0, 1.1, 7.8, -24)"
       );
     });
   });
@@ -130,7 +130,7 @@ describe("<VisualJSON />", () => {
       cy.get("[class=content]").should(
         "have.css",
         "transform",
-        "matrix(0.9, 0, 0, 0.9, -8.6, 24)"
+        "matrix(0.9, 0, 0, 0.9, -7.8, 24)"
       );
     });
   });
